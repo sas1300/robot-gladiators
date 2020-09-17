@@ -99,3 +99,5 @@ for(var i = 0; i < emenyNames.length; i++) {
     fight(enemyNames[i]); 
 }  
 
+// Ask learning assistant about error on line 98 and about the enemyName that was removed but not replaced with anything
+//Ask learning assistant about why my github won't push.  
