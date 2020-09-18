@@ -17,6 +17,7 @@ var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
+ 
 
 for(var i = 0; i < enemyNames.length; i++) {
     console.log(enemyNames [i]);
@@ -44,19 +45,19 @@ console.log(".", enemyAttack, enemyHealth);
     
      // remove enemy's health by subtracting the amount set in the playerAttack variable
              enemyHealth = enemyHealth - playerAttack;
-            console.log(playerName + " attacked " + "enemyName" + ". " + "."+ " now has " + enemyHealth + " health remaining.");
+            console.log(playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining.");
   
      // check enemy's health
              if (enemyHealth <= 0) {
-            window.alert("." + " has died!");
+            window.alert(enemyName + " has died!");
         } 
             else {
-            window.alert("." + " still has " + enemyHealth + " health left.");
+            window.alert(enemyName + " still has " + enemyHealth + " health left.");
         }
   
     // remove player's health by subtracting the amount set in the enemyAttack variable
             playerHealth = playerHealth - enemyAttack;
-            console.log("." + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining.");
+            console.log(enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining.");
   
      // check player's health
             if (playerHealth <= 0) {
@@ -88,8 +89,6 @@ console.log(".", enemyAttack, enemyHealth);
         
         }
     
-
-
     
 
 
@@ -97,7 +96,10 @@ console.log(".", enemyAttack, enemyHealth);
 
 for(var i = 0; i < emenyNames.length; i++) {
     fight(enemyNames[i]); 
-}  
+} 
+
+
+
 
 // Ask learning assistant about error on line 98 and about the enemyName that was removed but not replaced with anything
 //Ask learning assistant about why my github won't push.  
