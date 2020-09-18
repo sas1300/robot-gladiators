@@ -30,7 +30,7 @@ for(var i = 0; i < enemyNames.length; i++) {
 
 
 // Log multiple values
-console.log(".", enemyAttack, enemyHealth);
+console.log(enemyNames, enemyAttack, enemyHealth);
 
 
 }
@@ -45,19 +45,19 @@ console.log(".", enemyAttack, enemyHealth);
     
      // remove enemy's health by subtracting the amount set in the playerAttack variable
              enemyHealth = enemyHealth - playerAttack;
-            console.log(playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining.");
+            console.log(playerName + " attacked " + enemyNames + ". " + enemyNames + " now has " + enemyHealth + " health remaining.");
   
      // check enemy's health
              if (enemyHealth <= 0) {
-            window.alert(enemyName + " has died!");
+            window.alert(enemyNames + " has died!");
         } 
             else {
-            window.alert(enemyName + " still has " + enemyHealth + " health left.");
+            window.alert(enemyNames + " still has " + enemyHealth + " health left.");
         }
   
     // remove player's health by subtracting the amount set in the enemyAttack variable
             playerHealth = playerHealth - enemyAttack;
-            console.log(enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining.");
+            console.log(enemyNames + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining.");
   
      // check player's health
             if (playerHealth <= 0) {
@@ -89,12 +89,11 @@ console.log(".", enemyAttack, enemyHealth);
         
         }
     
-    
 
 
 // execute function
 
-for(var i = 0; i < emenyNames.length; i++) {
+for(var i = 0; i < enemyNames.length; i++) {
     fight(enemyNames[i]); 
 } 
 
@@ -102,4 +101,4 @@ for(var i = 0; i < emenyNames.length; i++) {
 
 
 // Ask learning assistant about error on line 98 and about the enemyName that was removed but not replaced with anything
-//Ask learning assistant about why my github won't push.  
+ 
