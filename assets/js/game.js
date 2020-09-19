@@ -103,4 +103,4 @@ for (var i = 0; i < enemyNames.length; i++) {
 
 
 
-// Ask learning assistant about error on line 98 and about the enemyName that was removed but not replaced with anything
+// Ask learning assistant about the enemyName that was removed but not replaced with anything
